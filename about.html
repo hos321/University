@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University  Websit Desing</title>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font Awesome library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Main Tamplate File Css -->
+    <link rel="stylesheet" href="css/stayl.css">
+</head>
+<body>
+    <!-- Start Header -->
+       <section class="sub-header">
+           <nav>
+               <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+               <div class="nav-links" id="navlinks">
+                 <i class="fas fa-times" onclick="hidemenu()" ></i>
+                   <ul>
+                       <li><a href="#">Home</a></li>
+                       <li><a href="#about.html">About</a></li>
+                       <li><a href="#">Course</a></li>
+                       <li><a href="#">Blog</a></li>
+                       <li><a href="#">Contact</a></li>
+                   </ul>
+               </div>
+               <i class="fas fa-bars" onclick="showmenu()"></i>
+           </nav>
+
+           <h1>about us</h1>
+        </section>
+
+    <!-- End Header -->
+    
+    
+    <!-- Start About Us Content -->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>We are the world’s largest university </h1>
+                    
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus exercitationem ipsum a doloremque voluptates. Sit dignissimos eos asperiores nemo possimus alias, aliquid minus quae vero rerum, sed debitis quibusdam architecto?</p>
+                    
+                    <a href="" class="hero-btn red-btn">EXPLORE NOW </a>
+                </div>
+                <div class="about-col">
+                    <img src="images/about.jpg" >
+                </div>
+            </div>
+        </section>
+    <!-- End About Us Content -->
+
+
+    <!-- Start Footre -->
+        <section class="footer">
+           <h4>About Us</h4>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem earum in eos tempora deserunt voluptatum expedita, ipsam cumque non, <br />deleniti pariatur, explicabo at quidem magni distinctio blanditiis veritatis consequuntur labore.</p>
+            
+           <div class="icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+           </div>
+           <p>Made With <i class="fas fa-heart"></i> By: Hashem Mdoukh</p>
+        </section>
+    <!-- End Footre -->
+
+    <!-- JavaScript For Toggle Menu -->
+   <script>
+       var navlinks = document.getElementById("navlinks");
+
+       function showmenu() {
+            navlinks.style.right = "0";
+       }
+
+       function hidemenu() {
+            navlinks.style.right = "-200px";
+       }
+   </script>
+
+
+</body>
+</html>
